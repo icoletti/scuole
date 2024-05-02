@@ -788,6 +788,80 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiOpendayOpenday extends Schema.CollectionType {
+  collectionName: 'opendays';
+  info: {
+    singularName: 'openday';
+    pluralName: 'opendays';
+    displayName: 'Openday';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Date: Attribute.DateTime & Attribute.Required;
+    School: Attribute.String & Attribute.Required;
+    Description: Attribute.Text & Attribute.Required;
+    Title: Attribute.String & Attribute.Required;
+    schools: Attribute.Relation<
+      'api::openday.openday',
+      'manyToMany',
+      'api::school.school'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::openday.openday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::openday.openday',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSchoolSchool extends Schema.CollectionType {
+  collectionName: 'schools';
+  info: {
+    singularName: 'school';
+    pluralName: 'schools';
+    displayName: 'School';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    SchoolName: Attribute.String & Attribute.Required;
+    opendays: Attribute.Relation<
+      'api::school.school',
+      'manyToMany',
+      'api::openday.openday'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::school.school',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::school.school',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -806,6 +880,8 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::openday.openday': ApiOpendayOpenday;
+      'api::school.school': ApiSchoolSchool;
     }
   }
 }

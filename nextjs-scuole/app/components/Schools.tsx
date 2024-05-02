@@ -101,6 +101,7 @@ const Schools = () => {
         <div key={index}>
           <h2>{school.name}</h2>
           <p>Addresses: {school.addresses.join(', ')}</p>
+          <img src={school.logo} alt={school.name} />
           <video width="320" height="240" controls>
             <source src={school.video} type="video/mp4" />
             Your browser does not support the video tag.

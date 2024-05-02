@@ -100,7 +100,11 @@ const Schools = () => {
       {schools.map((school, index) => (
         <div key={index}>
           <h2>{school.name}</h2>
-          <p>Addresses: {school.addresses.join(', ')}</p>
+          <ul>
+            {school.addresses.map((address, index) => (
+              <li key={index}>{address}</li>
+            ))}
+          </ul>
           <img src={school.logo} alt={school.name} />
           <video width="320" height="240" controls>
             <source src={school.video} type="video/mp4" />

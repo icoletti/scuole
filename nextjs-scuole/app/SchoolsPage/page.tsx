@@ -4,7 +4,11 @@ import Navbar from '../components/Navbar';
 
 const SchoolsPage = () => {
   return(
-    <Schools />
+    <div>
+      <Navbar />
+      <Schools />
+    </div>
+    
   ) 
 };
 

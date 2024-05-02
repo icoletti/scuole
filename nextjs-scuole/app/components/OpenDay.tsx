@@ -1,12 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 
-interface OpenDayData{
-    date: string;
-    school: string;
-    title: string;
-    description: string;
-}
+async function fetchOpenday(id: number) {}
 
 const OpenDay: React.FC = () => {
     const [openDayData, setOpenDayData] = useState<OpenDayData[]>([]);
@@ -29,7 +24,7 @@ const OpenDay: React.FC = () => {
       <h1>Open Days</h1>
       {openDayData.map((day, index) => (
         <div key={index}>
-          <h2>{day.title}</h2>
+          <h2>{opendays.data.attributes.Title}</h2>
           <p>Date: {day.date}</p>
           <p>School: {day.school}</p>
           <p>Description: {day.description}</p>

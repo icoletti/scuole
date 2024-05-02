@@ -13,6 +13,9 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4 text-white">
               <Link href="/SchoolsPage">Schools</Link>
             </div>
+            <div className="ml-10 flex items-baseline space-x-4 text-white">
+              <Link href="/OpenDayPage">Open days</Link>
+            </div>
         </div>
         </div>
       </div>

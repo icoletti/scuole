@@ -4,7 +4,8 @@
   "info": {
     "singularName": "school",
     "pluralName": "schools",
-    "displayName": "School"
+    "displayName": "School",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,12 @@
       "relation": "manyToMany",
       "target": "api::openday.openday",
       "inversedBy": "schools"
+    },
+    "promo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::promo.promo",
+      "inversedBy": "school"
     }
   }
 }

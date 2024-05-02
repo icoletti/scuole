@@ -827,12 +827,48 @@ export interface ApiOpendayOpenday extends Schema.CollectionType {
   };
 }
 
+export interface ApiPromoPromo extends Schema.CollectionType {
+  collectionName: 'promos';
+  info: {
+    singularName: 'promo';
+    pluralName: 'promos';
+    displayName: 'Promo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    video: Attribute.Media;
+    school: Attribute.Relation<
+      'api::promo.promo',
+      'oneToOne',
+      'api::school.school'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::promo.promo',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::promo.promo',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiSchoolSchool extends Schema.CollectionType {
   collectionName: 'schools';
   info: {
     singularName: 'school';
     pluralName: 'schools';
     displayName: 'School';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -843,6 +879,11 @@ export interface ApiSchoolSchool extends Schema.CollectionType {
       'api::school.school',
       'manyToMany',
       'api::openday.openday'
+    >;
+    promo: Attribute.Relation<
+      'api::school.school',
+      'oneToOne',
+      'api::promo.promo'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -881,6 +922,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::openday.openday': ApiOpendayOpenday;
+      'api::promo.promo': ApiPromoPromo;
       'api::school.school': ApiSchoolSchool;
     }
   }

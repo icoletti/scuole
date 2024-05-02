@@ -1,9 +1,17 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
-    <div>daoo</div>
-  );
-};
+    <nav>
+      <ul>
+        <li>
+          <Link href="/schools">
+            <a>Schools</a>
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  )
+}
 
-export default Navbar;
+export default Navbar

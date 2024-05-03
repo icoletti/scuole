@@ -18,7 +18,7 @@ const schools: School[] = [
   {
     name: 'ISTITUTO D’ISTRUZIONE “DON MILANI”',
     addresses: ['Servizi per la Sanità e l\'Assistenza Sociale', '', 'Economico Turismo'],
-    logo: 'https://drive.google.com/file/d/1SBKVlQkdA_CTBDsgYyzx5ZhPe1rg2r5S/view',
+    logo: '/workspaces/scuole/nextjs-scuole/app/img/DonMilani.png',
     video: 'https://drive.google.com/file/d/17oh6NMuBVr3HIShxC6wSL5PAe1wlY7pz/view',
     websiteUrl: 'http://www.domir.it/it/'
   },
@@ -110,6 +110,7 @@ const Schools = () => {
             <source src={school.video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <a href={school.websiteUrl} target="_blank" rel="noopener noreferrer">sito ufficiale</a>
         </div>
       ))}
     </div>

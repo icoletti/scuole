@@ -30,3 +30,22 @@ body {
     text-wrap: balance;
   }
 }
+
+.openday{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  border-radius: 10px;
+  
+}
+
+.elemento{
+  padding: 20px;
+  text-align: center;
+}
+
+.scuola-container{
+  display: grid;
+  gap: 20px;
+  border-radius: 10px;
+}

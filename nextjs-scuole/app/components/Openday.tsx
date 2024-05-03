@@ -27,20 +27,19 @@ async function fetchOpendays() {
 };
 
 const Openday = async () => {
-    console.log("qasddasda");
     const opendays = await fetchOpendays();
     console.log('od', opendays);
-    console.log("qasddasda");
-
+    
+    if (!opendays) {
+        return <div>Loading...</div>;
+    }
 
     const filtredOpenday = await opendays.data.map((openday: any) => {
 
         return (
-            <div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    <div key={openday.id}>
-                        <OpendayCard openday={openday} />
-                    </div>
+            <div className="openday">
+                <div key={openday.id} className="elemento">
+                    <OpendayCard openday={openday} />
                 </div>
             </div>
         );
@@ -51,6 +50,7 @@ const Openday = async () => {
         </div>
     );
 }
+
 
 
 

@@ -4,28 +4,28 @@ const schools: School[] = [
   {
     name: 'LICEO ANTONIO ROSMINI',
     addresses: ['Classico', 'Scientifico', 'Linguistico', 'Scienze Applicate', 'Scientifico Sportivo'],
-    logo: 'https://drive.google.com/file/d/19JV2XmqRQPVnAQf9209WWu_rACWETbJJ/view',
+    logo: `https://drive.google.com/file/d/19JV2XmqRQPVnAQf9209WWu_rACWETbJJ/view`,
     video: 'https://drive.google.com/file/d/140NIpgFof5DWRNyyEm9b3ajjCPu9udDe/view?t=16',
     websiteUrl: 'https://liceorosmini.eu/'
   },
   {
     name: 'LICEO DELLE SCIENZE UMANE “F.FILZI”',
     addresses: ['Scienze Umane', 'Economico Sociale'],
-    logo: 'https://drive.google.com/file/d/1YIrDapLXT0nrBRINZAgnxTb0zEIvcKzr/view',
+    logo: `https://drive.google.com/file/d/1YIrDapLXT0nrBRINZAgnxTb0zEIvcKzr/view`,
     video: 'https://drive.google.com/file/d/12QsYZ1jz3ZJ9u-hoNVsJEF8Ao9Xvna2Z/view?t=1',
     websiteUrl: 'https://www.liceofilzi.it/'
   },
   {
     name: 'ISTITUTO D’ISTRUZIONE “DON MILANI”',
     addresses: ['Servizi per la Sanità e l\'Assistenza Sociale', '', 'Economico Turismo'],
-    logo: '/workspaces/scuole/nextjs-scuole/app/img/DonMilani.png',
+    logo: `/workspaces/scuole/nextjs-scuole/app/img/DonMilani.png`,
     video: 'https://drive.google.com/file/d/17oh6NMuBVr3HIShxC6wSL5PAe1wlY7pz/view',
     websiteUrl: 'http://www.domir.it/it/'
   },
   {
     name: 'ISTITUTO TECNICO TECNOLOGICO “G. MARCONI”',
     addresses: ['Scienze Umane', 'Economico Sociale'],
-    logo: 'https://drive.google.com/file/d/1ObhgkVkfjCRGrzIKmJ1IBAMRW6pmrNiF/view',
+    logo: `https://drive.google.com/file/d/1ObhgkVkfjCRGrzIKmJ1IBAMRW6pmrNiF/view`,
     video: '',
     websiteUrl: 'https://www.marconirovereto.it/'
   },
@@ -64,7 +64,7 @@ const schools: School[] = [
   {
     name: 'POLO GIUSEPPE VERONESI CFP - MADE++',
     addresses: ['MADE', 'STEAM', 'DIGITAL MANUFACTURING DESIGNER'],
-    logo: 'https://drive.google.com/file/d/1wZR7Wjpj_7ZpvW-34rbDNhRKNzPDAzYU/view',
+    logo: 'https://drive.google.com/file/d/1wZR7Wjpj_7ZpvW-34rbDNhRKNzPDAzYU/preview',
     video: 'https://drive.google.com/file/d/1DoV5F6avsv4k1yWBsqoe3oGclc34nWp0/view',
     websiteUrl: 'https://www.poloveronesi.it/'
   },
@@ -98,14 +98,14 @@ const Schools = () => {
   return (
     <div>
       {schools.map((school, index) => (
-        <div key={index}>
-          <h2>{school.name}</h2>
+        <div key={index} className='scuola-container'>
+          <img src={school.logo} alt={school.name} />
+          <h2 className='text-xl front-semibold mb-2'>{school.name}</h2>
           <ul>
             {school.addresses.map((address, index) => (
               <li key={index}>{address}</li>
             ))}
           </ul>
-          <img src={school.logo} alt={school.name} />
           <video width="320" height="240" controls>
             <source src={school.video} type="video/mp4" />
             Your browser does not support the video tag.

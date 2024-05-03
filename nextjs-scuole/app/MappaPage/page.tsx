@@ -1,14 +1,14 @@
 "use client"
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Openday from '../components/Openday'
+import Mappa from '../components/Mappa'
 
 
 const OpenDayPage = () => {
     return(
       <div>
         <Navbar />
-        <Openday />
+        <Mappa />
       </div>
       
     ) 

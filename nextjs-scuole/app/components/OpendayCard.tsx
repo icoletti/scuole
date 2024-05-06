@@ -15,6 +15,7 @@ const OpendayCard = ({openday}: any) => {
                         {openday.attributes.Title}
                     </h2>
                     <p className='text-gray-600'>{openday.attributes.Description}</p>
+                    <p className='text-gray-600'>{new Date(openday.attributes.Date).toLocaleString()}</p>
                 </div>
             </Link>
         </div>

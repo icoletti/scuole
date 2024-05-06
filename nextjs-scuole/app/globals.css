@@ -74,3 +74,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.carrello{
+  width: 80%;
+}
+
+.container-stacco{
+  margin: 0;
+}

@@ -8,29 +8,32 @@ import{
 } from '/workspaces/scuole/nextjs-scuole/components/ui/carousel';
 
 const imageUrls = [
-    '/workspaces/scuole/nextjs-scuole/public/LiceoDepero.PNG',
-    '/workspaces/scuole/nextjs-scuole/public/LiceoRosmini.PNG',
-    '/workspaces/scuole/nextjs-scuole/public/LiceoArcivescovile.PNG',
-    '/workspaces/scuole/nextjs-scuole/public/Marconi.PNG',
-    '/workspaces/scuole/nextjs-scuole/public/DonMilani.PNG',
-    '/workspaces/scuole/nextjs-scuole/public/Barelli.PNG',
-    '/workspaces/scuole/nextjs-scuole/public/UPT.PNG',
+    '/LiceoDepero.PNG',
+    '/LiceoRosmini.PNG',
+    '/LiceoArcivescovile.PNG',
+    '/Marconi.PNG',
+    '/DonMilani.PNG',
+    '/Barelli.PNG',
+    '/UPT.PNG',
 
 ];
 
 const MyCarousel: React.FC = () => {
     return (
-        <Carousel>
+        <div className="flex justify-center">
+            <Carousel className='carrello'>
             <CarouselPrevious />
             <CarouselContent>
                 {imageUrls.map((url, index) => (
                     <CarouselItem key={index}>
-                    <img src={url} alt={`Image ${index + 1}`} />
+                        <img src={url} alt={`Image ${index + 1}`} />
                     </CarouselItem>
                 ))}
-          </CarouselContent>
-          <CarouselNext />
-        </Carousel>
+            </CarouselContent>
+            <CarouselNext />
+            </Carousel>
+        </div>
+        
     );
 };
 

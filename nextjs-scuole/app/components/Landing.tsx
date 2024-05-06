@@ -6,31 +6,30 @@ function Landing() {
   return (
     <div>
       <Navbar />
-      <div className='container-titolo'>
-        <h1 className='text-primary-orange'>ORIE-</h1>
+      <div className='text-9xl font-semibold my-6 ml-9'>
+        <h1 className='text-primary-orange'>ORIE<span className='text-primary-blue'>-</span></h1>
         <h1 className='text-primary-orange'>NTAM</h1>
         <h1 className='text-primary-orange'>ENTO</h1>
       </div>
 
       <div className='container-stacco'>
-
+        <img src="/triangolino.png" alt="" />
       </div>
 
 
-      <div className='bg-primary-blue'>
-        <div>
-          <p className='text-white italic'>Siamo qui per offrirti una prospettiva più chiara sul futuro,
+      <div className='bg-primary-blue '>
+        <div className='flex mb-4'>
+        <h2 className='text-white text-5xl w-1/2 p-4'>METTIAMO IN CHIARO IL FUTURO</h2>
+          <p className='text-white italic w-1/2 p-4'>Siamo qui per offrirti una prospettiva più chiara sul futuro,
             guidandoti nella scelta migliore per valorizzare al massimo il
             tuo potenziale. Il nostro sito è stato cerato con questo obbiettivo:
             aiutarti a prendere decisioni informate e vantaggiose che ti porteranno
             verso un futuro più luminoso</p>
-          <h2>METTIAMO IN CHIARO IL FUTURO</h2>
         </div>
         <div>
           <MyCarousel />
         </div>
       </div>
-
     </div>
   )
 }

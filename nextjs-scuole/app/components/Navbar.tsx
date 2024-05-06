@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className='text-white'>
-            <Link href="/">Home</Link>
+            <Link href="/LandingPage">Home</Link>
             </div>
             <div className="ml-10 flex items-baseline space-x-4 text-white">
               <Link href="/SchoolsPage">Schools</Link>

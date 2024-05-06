@@ -51,7 +51,10 @@ const Quadriennali = () => {
             
             <div>
                 <img src="/LogoVeronesi.png" alt="Polo Veronesi" />
-                <p></p>
+                <p>Offre progetti di partnership tra scuola e aziende, sviluppano idee, modelli organizzativi e prodotti tecnologicamente innovativi.
+Coniugano in modo innovativo la cultura del sapere con la cultura del fare. Coltivano grandi sogni e grandi obiettivi.
+Garantendo qualità dell’insegnamento, aggiornamento tecnico e culturale.
+</p>
                 <div>
                     <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl'><a href={"https://www.poloveronesi.it/"} target="_blank" rel="noopener noreferrer">sito ufficiale</a></button>
                     <button className='bg-primary-blue text-white px-3 py-2 rounded-3xl' onClick={handleClick}> video presentazione
@@ -66,7 +69,8 @@ const Quadriennali = () => {
     </div>
     <div>
                 <img src="/LogoMarconi.png" alt="Marconi" />
-                <p></p>
+                <p>Il progetto per il nuovo quadriennio nasce da stimoli innovativi di natura didattico-metodologica come l’utilizzo di metodologie attive basate sulle discipline STEM e da sollecitazioni provenienti dal mondo industriale (Industry 4.0) ed economico (Transizione Verde – Green Deal).
+</p>
                 <div>
                     <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl'><a href={"https://www.marconirovereto.it/"} target="_blank" rel="noopener noreferrer">sito ufficiale</a></button>
                     <button className='bg-primary-blue text-white px-3 py-2 rounded-3xl' onClick={handleClick}> video presentazione
@@ -78,7 +82,7 @@ const Quadriennali = () => {
             </div>
             <div>
                 <img src="/LogoFontana.png" alt="Fontana" />
-                <p></p>
+                <p>L’indirizzo sperimentale CAT 4.0, che si allinea con i percorsi europei, realizzato con il contributo del Collegio dei Geometri e Geometri Laureati della P.A.T., si pone l’obiettivo di formare figure professionali che rispondano alle esigenze legate al mondo delle costruzioni senza perdere di vista la tutela dell’ambiente e del territorio. Questo indirizzo prevede un rafforzamento del curriculum sulle materie STEAM e utilizza una metodologia fortemente incentrata sulla didattica laboratoriale.</p>
                 <div>
                     <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl'><a href={"https://fgfontana.eu/"} target="_blank" rel="noopener noreferrer">sito ufficiale</a></button>
                     <button className='bg-primary-blue text-white px-3 py-2 rounded-3xl' onClick={handleClick}> video presentazione

@@ -83,3 +83,72 @@
 .container-stacco{
   margin: 0;
 }
+
+.bottoni {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5 rem;
+  width: 40%;
+  margin-left: 15%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.bottoni > button {
+  flex: 15%;
+}
+
+
+.titolo {
+  background-image: url('/bg1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.titolo-quadriennali {
+  background-image: url('/bg3.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.prova-carro{
+  width: 50%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.nonSo{
+  margin-left: 8%;
+  box-shadow: 5%;
+}
+
+.container-stacco-storto{
+  margin: 0;
+  rotate: 180deg;
+}
+
+.container-stacco-storto2{
+  margin: 0;
+  transform: scaleX(-1);
+}
+
+.bottoni-bg{
+  background-image: url('/bg2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.mappa-container{
+  width: 50%;
+  margin: auto;
+  height: 100%;
+}
+
+
+.bott{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

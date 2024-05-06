@@ -28,7 +28,7 @@ const config = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
           orange: "#ff6600",
-          blue: "#1794E8",
+          blue: "#339999",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

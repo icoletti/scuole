@@ -19,12 +19,17 @@ function Landing() {
 
       <div className='bg-primary-blue '>
         <div className='flex mb-4'>
-        <h2 className='text-white text-5xl w-1/2 p-4'>METTIAMO IN CHIARO IL FUTURO</h2>
-          <p className='text-white italic w-1/2 p-4'>Siamo qui per offrirti una prospettiva più chiara sul futuro,
+          <p className='text-white italic w-1/2 p-4 text-sm'>Siamo qui per offrirti una prospettiva più chiara sul futuro,
             guidandoti nella scelta migliore per valorizzare al massimo il
             tuo potenziale. Il nostro sito è stato cerato con questo obbiettivo:
             aiutarti a prendere decisioni informate e vantaggiose che ti porteranno
             verso un futuro più luminoso</p>
+            <div className=' p-4 ml-10'>
+            <h2 className='text-white text-5xl w-1/2'>METTIAMO </h2>
+            <h2 className='text-white text-5xl w-1/2 text-nowrap'>IN CHIARO </h2>
+            <h2 className='text-white text-5xl w-1/2 text-nowrap'>IL FUTURO</h2>
+            </div>
+          
         </div>
         <div>
           <MyCarousel />

@@ -152,3 +152,9 @@
   flex-direction: column;
   align-items: center;
 }
+
+.titolo-licei {
+  background-image: url('/Licei.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}

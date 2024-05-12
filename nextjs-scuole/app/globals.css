@@ -158,3 +158,9 @@
   background-attachment: fixed;
   background-size: cover;
 }
+
+.titolo-formazione{
+  background-image: url('/IstitutiForm.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}

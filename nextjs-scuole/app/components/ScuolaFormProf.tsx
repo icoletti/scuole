@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { School } from '../components/School';
 
+// Definizione delle scuole
 const schools: School[] = [
     {
         name: 'CFP OPERA ARMIDA BARELLI',
@@ -8,29 +9,31 @@ const schools: School[] = [
         logo: '/LogoBarelli.png',
         video: 'https://drive.google.com/file/d/1HCBQ215sui6fFvI2B4OqVXNMeNcXmOi5/view',
         websiteUrl: 'https://operaarmidabarelli.org/'
-      },
-      {
+    },
+    {
         name: 'POLO GIUSEPPE VERONESI CFP - MADE++',
         addresses: ['MADE', 'STEAM', 'DIGITAL MANUFACTURING DESIGNER'],
         logo: '/LogoVeronesi.png',
         video: 'https://drive.google.com/file/d/1DoV5F6avsv4k1yWBsqoe3oGclc34nWp0/view',
         websiteUrl: '  '
-      },
-      {
+    },
+    {
         name: 'ISTITUTO DI FORMAZIONE PROFESSIONALE ALBERGHIERO',
         addresses: ['Panificazione e Pasticceria', 'Cucina', 'Sala e Bar', 'Capes'],
         logo: '/LogoAlberghiero.png',
         video: 'https://drive.google.com/file/d/1tpFJw2h4syTrfTa8IYz9cRSpOx2qccrz/view',
         websiteUrl: 'https://www.alberghierorovereto.it/'
-      },
-
+    },
 ]
+
 const ScuolaFormProf = () => {
     const [showVideo, setShowVideo] = useState(false);
 
-  const handleClick = () => {
-    setShowVideo(true);
-  };
+    // Funzione per gestire il click sul pulsante del video
+    const handleClick = () => {
+        setShowVideo(true);
+    };
+
     return (
         <div>
             <div className='titolo-formazione'>
@@ -47,14 +50,14 @@ const ScuolaFormProf = () => {
                 </div>
             </div>
             <div className='pt-20 pb-16'></div>
-            
+
+            {/* Mostra le informazioni della prima scuola */}
             <div>
                 <img src="/LogoBarelli.png" alt="CFP OPERA ARMIDA BARELLI" />
                 <p>L’Opera Armida Barelli offre agli studenti in entrata la possibilità di iscriversi a
                      due qualifiche professionali triennali (acconciatura ed estetica)
                       presenti in entrambe le sedi e ad un percorso quadriennale per l’ottenimento del diploma tecnico di operatore socio sanitario presente solo presso la sede di Rovereto.
-
-</p>
+                </p>
                 <div>
                     <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl'><a href={"https://operaarmidabarelli.org/"} target="_blank" rel="noopener noreferrer">sito ufficiale</a></button>
                     <button className='bg-primary-blue text-white px-3 py-2 rounded-3xl' onClick={handleClick}> video presentazione
@@ -65,15 +68,14 @@ const ScuolaFormProf = () => {
                     )}
                     </button>
                 </div>
-                
-    </div>
-    <div className='pt-20 pb-16'></div>
-            
+            </div>
+            <div className='pt-20 pb-16'></div>
+
+            {/* Mostra le informazioni della seconda scuola */}
             <div>
                 <img src="/LogoAlberghiero.png" alt="Alberghiero" />
                 <p>Questa scuolav assume la persona come valore fondamentale per l’espletamento della propria attività formativa. Pone al centro i ragazzi, fissa la massima attenzione sull’inclusione e sullo sviluppo delle competenze personali; mira a formare persone che intendano il lavoro come espressione di sé, persone che siano orientate al lavoro ben fatto, alla precisione.
-
-</p>
+                </p>
                 <div>
                     <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl'><a href={"https://www.alberghierorovereto.it/"} target="_blank" rel="noopener noreferrer">sito ufficiale</a></button>
                     <button className='bg-primary-blue text-white px-3 py-2 rounded-3xl' onClick={handleClick}> video presentazione
@@ -84,18 +86,17 @@ const ScuolaFormProf = () => {
                     )}
                     </button>
                 </div>
-                
-    </div>
+            </div>
 
-    <div className='pt-20 pb-16'></div>
-            
+            <div className='pt-20 pb-16'></div>
+
+            {/* Mostra le informazioni della terza scuola */}
             <div>
                 <img src="/LogoVeronesi.png" alt="Veronesi" />
                 <p>Offre progetti di partnership tra scuola e aziende, sviluppano idee, modelli organizzativi e prodotti tecnologicamente innovativi.
-Coniugano in modo innovativo la cultura del sapere con la cultura del fare. Coltivano grandi sogni e grandi obiettivi.
-Garantendo qualità dell’insegnamento, aggiornamento tecnico e culturale.
-
-</p>
+                Coniugano in modo innovativo la cultura del sapere con la cultura del fare. Coltivano grandi sogni e grandi obiettivi.
+                Garantendo qualità dell’insegnamento, aggiornamento tecnico e culturale.
+                </p>
                 <div>
                     <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl'><a href={"https://www.poloveronesi.it/"} target="_blank" rel="noopener noreferrer">sito ufficiale</a></button>
                     <button className='bg-primary-blue text-white px-3 py-2 rounded-3xl' onClick={handleClick}> video presentazione
@@ -106,12 +107,8 @@ Garantendo qualità dell’insegnamento, aggiornamento tecnico e culturale.
                     )}
                     </button>
                 </div>
-                
-    </div>
- </div>
-
-
-   
+            </div>
+        </div>
     );
 }
 

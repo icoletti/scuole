@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from "react";
 import OpendayCard from "./OpendayCard";
 
-
+// Funzione asincrona per recuperare gli open day
 async function fetchOpendays() {
     console.log('ok')
     const options = {
@@ -26,6 +26,7 @@ async function fetchOpendays() {
     }
 };
 
+// Componente Openday
 const Openday = async () => {
     const opendays = await fetchOpendays();
     console.log('od', opendays);
@@ -34,6 +35,7 @@ const Openday = async () => {
         return <div>Loading...</div>;
     }
 
+    // Mappa gli open day filtrati
     const filtredOpenday = await opendays.data.map((openday: any) => {
 
         return (
@@ -51,9 +53,4 @@ const Openday = async () => {
     );
 }
 
-
-
-
-
 export default Openday;
-

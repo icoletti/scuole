@@ -61,6 +61,7 @@ const Licei = () => {
                     </button>
                 </div>
             </div>
+            <div className='pt-20 pb-16'></div>
 
             {/* Informazioni sul Liceo Fabio Filzi */}
             <div>
@@ -83,6 +84,7 @@ const Licei = () => {
                 </div>
             </div>
 
+            <div className='pt-20 pb-16'></div>
             {/* Informazioni sul Liceo Depero */}
             <div>
                 <img src="/LogoLiceoDepero.png" alt="Depero" />
@@ -104,6 +106,7 @@ const Licei = () => {
                     </button>
                 </div>
             </div>
+            <div className='pt-20 pb-16'></div>
 
             {/* Informazioni sull'Arcivescovile */}
             <div>
@@ -124,6 +127,7 @@ const Licei = () => {
                     </button>
                 </div>
             </div>
+            <div className='pt-20 pb-16'></div>
 
             {/* Informazioni sul Liceo STEAM International */}
             <div>
@@ -145,6 +149,7 @@ const Licei = () => {
                 </div>
             </div>
 
+            <div className='pt-20 pb-16'></div>
             <div className='pt-20 pb-16'></div>
 
             {/* Footer */}

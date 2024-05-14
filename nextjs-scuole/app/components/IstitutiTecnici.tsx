@@ -48,10 +48,12 @@ const IstitutiTecnici = () => {
             </div>
             <div className='pt-20 pb-16'></div>
             {/* Informazioni sul FONTANA */}
-            <div>
+            
+                <div>
                 <img src="/LogoFontana.png" alt="FONTANA" />
                 <p>L’indirizzo sperimentale CAT 4.0, che si allinea con i percorsi europei, realizzato con il contributo del Collegio dei Geometri e Geometri Laureati della P.A.T., si pone l’obiettivo di formare figure professionali che rispondano alle esigenze legate al mondo delle costruzioni senza perdere di vista la tutela dell’ambiente e del territorio. Questo indirizzo prevede un rafforzamento del curriculum sulle materie STEAM e utilizza una metodologia fortemente incentrata sulla didattica laboratoriale.
 </p>
+                </div>
                 <div>
                     {/* Pulsante per il sito ufficiale del FONTANA */}
                     <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl'><a href={"https://fgfontana.eu/"} target="_blank" rel="noopener noreferrer">sito ufficiale</a></button>
@@ -63,16 +65,18 @@ const IstitutiTecnici = () => {
                             </video>
                         )}
                     </button>
-                </div>
+                
             </div>
             <div className='pt-20 pb-16'></div>
             {/* Informazioni sul DON MILANI */}
+            
             <div>
                 <img src="/LogoDonMilani.png" alt="DON MILANI" />
                 <p>Offre progetti di partnership tra scuola e aziende, sviluppano idee, modelli organizzativi e prodotti tecnologicamente innovativi.
 Coniugano in modo innovativo la cultura del sapere con la cultura del fare. Coltivano grandi sogni e grandi obiettivi.
 Garantendo qualità dell’insegnamento, aggiornamento tecnico e culturale.
 </p>
+                </div>
                 <div>
                     {/* Pulsante per il sito ufficiale del DON MILANI */}
                     <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl'><a href={"http://www.domir.it/it/"} target="_blank" rel="noopener noreferrer">sito ufficiale</a></button>
@@ -84,7 +88,6 @@ Garantendo qualità dell’insegnamento, aggiornamento tecnico e culturale.
                             </video>
                         )}
                     </button>
-                </div>
             </div>
             <div className='pt-20 pb-16'></div>
             <div className='pt-20 pb-16'></div>

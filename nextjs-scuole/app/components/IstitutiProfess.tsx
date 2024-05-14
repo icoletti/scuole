@@ -44,6 +44,8 @@ const IstitutiProfessionali = () => {
                     </button>
                 </div>
             </div>
+            <div className='pt-20 pb-16'></div>
+            
             {/* Footer */}
             <div className='pt-20 pb-16'></div>
             <div className='pt-20 pb-16'></div>

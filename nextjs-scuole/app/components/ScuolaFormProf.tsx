@@ -108,6 +108,12 @@ const ScuolaFormProf = () => {
                     </button>
                 </div>
             </div>
+            <div className='pt-20 pb-16'></div>
+            <div className='pt-20 pb-16'></div>
+            {/* Footer */}
+            <footer className='bg-primary-orange text-white text-center px-3 py-3'>
+                <p>Contatti | Privacy | Cookie Policy | Preferenze Cookie</p>
+            </footer>
         </div>
     );
 }

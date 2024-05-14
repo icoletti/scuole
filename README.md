@@ -1,6 +1,5 @@
 # Documentazione del progetto
 ## Tecnologie ustate
-
 Web Application realizzata con **NextJs**, come API principale invece hop utilizzato **Strapi**.
 Questa documentazione fornisce una panoramica del progetto, istruzioni sull'installazione, configurazione e l'utilizzo del progetto.
 
@@ -14,11 +13,11 @@ Scuole è una piattaforma web sviluppata utilizzando Next.js, un framework React
 2. Controllare le versioni di node e npm `node --version` `npm --version`
 3. Se necessario aggiornare le dipendenze `npm update`
 4. Entrare nella cartella strapi-scuole da terminale: `cd strapi-scuole`
-6. Avviare strapi `npm run develop`
-7. Aprire un nuovo terminale
-8. Entrare nella cartella nextjs-scuole da terminale: `cd nextjs-scuole`
-9. Installare le librerie utilizzate dal progetto `npm install`
-10. Avviare l'applicazione  next.js `npm run dev`
+5. Avviare strapi `npm run develop`
+6. Aprire un nuovo terminale
+7. Entrare nella cartella nextjs-scuole da terminale: `cd nextjs-scuole`
+8. Installare le librerie utilizzate dal progetto `npm install`
+9. Avviare l'applicazione  next.js `npm run dev`
 
 ## Documentazione
 Tutto il codice del progetto è stato opportunamente commentato.
@@ -34,9 +33,6 @@ Nel porgetto possiamo trovare:
     - OpendayCard.tsx, gestisce i singoli elementi presenti nel mio backend
     - Quadriennali.tsx, pagina che si occupa delle scuole quadriennali presenti a Rovereto, torviamo un link ai siti ufficiali delle scuole e un video di presentazione delle scuole
     - ScuolaFormProf.tsx, pagina che raggruppa tutte le Scuole di formazione professionale presenti a Rovereto, torviamo un link ai siti ufficiali delle scuole e un video di presentazione delle scuole
-
-
-
 
 ## Risorse aggiuntive
 Per ulteriori informazioni su Next.js, consultare la [documentazione ufficiale di Next.js](https://nextjs.org/docs).

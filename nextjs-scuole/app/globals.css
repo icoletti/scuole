@@ -164,3 +164,9 @@
   background-attachment: fixed;
   background-size: cover;
 }
+
+.titolo-professionali{
+  background-image: url('/IstitutiForm.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}

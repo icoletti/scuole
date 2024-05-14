@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './Navbar'
 import MyCarousel from './MyCarousel'
 import Quadriennali from './Quadriennali'
+import { Link } from 'lucide-react'
+
 
 function Landing() {
   return (
@@ -9,9 +11,9 @@ function Landing() {
       <Navbar />
       <div className='titolo'>
         <div className=' text-9xl font-semibold pt-20 pb-16 ml-9'>
-          <h1 className='text-primary-orange'>ORIE<span className='text-primary-blue'>-</span></h1>
-          <h1 className='text-primary-orange'>NTAM</h1>
-          <h1 className='text-primary-orange'>ENTO</h1>
+          <h1 className='text-primary-orange'>SCUO </h1>
+          <h1 className='text-primary-orange'>LA NI<span className='text-primary-blue'>-</span></h1>
+          <h1 className='text-primary-orange'>TIDA</h1>
 
 
         </div>
@@ -53,11 +55,11 @@ function Landing() {
           <br />
           <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl '>ISTITUTI PROFESSIONALI</button>
           <br />
-          <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl '>LICEI</button>
+          <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl '>LICEI </button>
           <br />
           <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl '>SCUOLA DI FORMAZIONE PROFESSIONALE</button>
           <br />
-          <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl '>ISTITUTI TECNICI</button>
+          <button className='bg-primary-orange text-white px-3 py-2 rounded-3xl '>ISTITUTI TECNICI </button>
         </div>
         <div className='container-stacco'>
           <img src="/triangolino.png" alt="" />
